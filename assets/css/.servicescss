@@ -1,0 +1,70 @@
+.services-container{
+	background-color: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.services-container-page-title{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	font-size: 60px;
+	color: rgb(0,0,0);
+	font-family: "Avenir LT";
+	font-weight: 800;
+}
+.services-article-1-container{
+	display: inline-block;
+	margin-left: 10%;
+}
+.services-article1-content{
+	display: block;
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+.services-article1-content-body{
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: rgb(0,0,0);
+	font-family: "Avenir";
+}
+.services-article1-content-image{
+	display: inline-block;
+}
+/* Services 2 container */
+.services-article-2-container{
+	width: 100%;
+	background-color: #f9f9f9;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	
+}
+
+.services-article2-content{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+}
+
+
+.services-article2-content-body{
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	color: rgb(0,0,0);
+	font-family: "Avenir";
+}
+.services-article2-content-image{
+	display: inline-block;
+	margin-right: 1%;
+}
+.custom-quote-container{
+	background-color: white;
+}

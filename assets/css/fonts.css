@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/Avenir.woff") format('woff');
+	 url("../fonts/Avenir.ttc");
+	 url("../fonts/Avenir.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Avenir Next";
+	src: url("../fonts/Avenir_Next.woff") format('woff');
+	 url("../fonts/Avenir Next.ttc") ;
+	 url("../fonts/Avenir_Next.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Avenir Next Condensed";
+	src: url("../fonts/Avenir Next Condensed.ttc");
+}
+
+@font-face {
+	font-family: "Avenir Roman";
+	src: url("../fonts/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+	font-family: "AvenirLTStd Roman";
+	src: url("../fonts/AvenirLTStd-Roman.otf");
+}
+@font-face {
+	font-family: "Avenir Black";
+	src: url("../fonts/AvenirLTStd-Black.woff") format('woff');
+	 url("../fonts/AvenirLTStd-Black.otf");
+	 url("../fonts/AvenirLTStd-Black.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: "AvenirLTStd Medium";
+	src: url("../fonts/AvenirLTStd-Medium.otf");
+}
+
+@font-face {
+	font-family: "AvenirLTStd Light";
+	src: url("../fonts/AvenirLTStd-Light.otf");
+}
+

@@ -1,0 +1,125 @@
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body{
+}
+
+article{
+
+}
+.active{
+	font-weight: bold;
+}
+main {
+	width: 100%;
+}
+
+form * {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-size:0.875rem;;
+	padding: 10px;
+}
+
+form button {
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	background-color: black;
+	color: white;
+}
+
+.link-color{
+	color: #27acff;
+}
+
+.background-img img{
+	margin: 2%;
+}
+.background-img-kontakt{
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.background-img-services{
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.background-img-about{
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.background-img-blog{
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.background-img-post{
+	background: url("../images/Logo-BG.svg");
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: -10% 70%;
+	position: relative;
+	z-index: 101;
+}
+.background-img-training{
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+.background-img-training img {
+	margin: 2%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+/* visited link */
+a:visited {
+
+}
+
+/* mouse over link */
+a:hover {
+	font-weight: bold;
+}
+
+/* selected link */
+a:active {
+
+}
+
+
+
+
+.border-2px{
+	border: 2px solid black;
+	display: flex;
+	flex-flow: column;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-left: -5%;
+}
+
+.nav-bar-anchor a{
+	text-align: center;
+}
+
+/******** FOOTER ***********/
+
+
+
+

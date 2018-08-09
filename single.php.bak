@@ -1,0 +1,117 @@
+<?php get_header(); ?>
+
+<div class="background-img-post">
+	<div class="green-heading-container">
+		<div class="green-title">Wisen</div>
+		<div class="green-dash"></div>
+	</div>
+<article class="blog-post-single">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<div>
+			<?php
+				the_content();
+			?>
+		</div>
+
+	<!--- END OF POST --->
+		<div class="blog-post-footer normal-text">
+			<p style="line-height: 40px;">Posted by <span class="link-color"><?php the_author();?></span><br />
+						<?php  the_date('d M Y');?></p>
+		</div>
+			
+			<?php endwhile; ?>
+			<?php endif;?>
+	</article>
+<?php get_footer();?>
+
+	<article class="blog-post-single" style="margin-left: 110px;">
+
+		<div style="font-size: 60px; width: 80%;">Agiles Projektmanagement verbessert die Projektbearbeitung</div>
+		<figure style="float: right; width: 59%; margin: 1%; margin-right: 8%;">
+			<img src="http://127.0.0.1/wp/wp-content/uploads/2018/06/agile-process.png" alt=""
+			     width="100%" height="100%" class="alignright size-full wp-image-238" />
+			<figcaption style="float: right;  margin-top: 1%">
+				«Agile» – auf Deutsch beweglich, wendig, flexibel – bezeichnet eine aus der Informatik stammende Form des Projektmanagements, die zunehmend auch in anderen Branchen Anwendung findet
+			</figcaption>
+		</figure>
+		<div style="font-size:24px; width: 30%; margin-top:1%; margin-bottom: 1%;" >Heutige Bauprojekte sind nicht nur kompliziert, sondern auch dynamisch, verändern sich also während des Bauablaufs. Dies ruft nach einer Anpassung des Projektmanagements.</div>
+
+
+		<div class="blog-article" style="width: 100%; font-size: 16px; line-height: 22px;">
+			<div class="article-unknown-class" style="width:30%; float: left; margin-right: 2%;">
+				<span class="green-dash-article"></span> Bearbeitungstempo und Kos- tendruck erhöhen die Belastung von Projektverantwortlichen. «Scrum» als Unterform des sog. «agilen» Projektma- nagements ist ein Lösungsansatz und hat der IT-Branche zu einer schnellen, flexi- blen Bearbeitung von Projektaufgaben verholfen. Die erste Frage, die Sie sich jetzt stellen werden, ist sicherlich: «Kann ein IT-Projekt mit einem Bauprojekt ver- glichen werden?» Die Antwort lautet: Die Anforderungen und die Probleme in der Projektbearbeitung sind dieselben.
+				<p class="paragraph-heading-alpha">Dem höheren Termin- und Kostendruck begegnen</p>Das klassische Projektmanagement hat sich der in den letzten Jahren erschwer- ten Ablauf- und Kostensituation nicht angepasst. Das Festhalten an etablierten Teamstrukturen und den darin veranker- ten Abläufen verlängert die Reaktions- zeiten. Die zentrale Herausforderung ist neben den Kosten der hohe Termindruck. Oft beeinträchtigt dieser den Blick auf das Wesentliche: auf Überwachung und Analyse des Projektfortschritts.
+				Aus Sicht eines einzelnen am Bau be- teiligten Unternehmens, z.B. der Elektro- planung, erschwert zudem die Abhängig- keit von den anderen am Bau beteiligten Gewerken und von weiteren externen Einflüssen wie z.B. veränderten Kunden- wünschen oder behördlichen Auflagen die effiziente Bearbeitung des Projekts, denn offene Fragen lassen sich teilweise erst im vereinbarten Sitzungsraster be- sprechen statt sofort.
+				Heute werden Projekte häufig nach dem «Wasserfallmodell» aus dem Jahr 1950 bearbeitet, das heisst, das Vorgehen ist linear: Initiierung – Planung – Ausfüh- rung – Abschluss. Jede Phase hat einen vordefinierten Start- und Endpunkt. Die- ser Ablauf ergibt Sinn, wenn Anforderun- gen, Leistungen und Abläufe präzise be- schrieben werden können. Doch fallen Projekte zwischen den Phasen Planung und Ausführung nicht immer wieder zu- rück? Das ist unerwünscht, denn damit verzögert und verteuert sich ein Projekt.
+				<p class="paragraph-heading-alpha">Agil statt schwerfällig</p>
+				Beim agilen Projektmanagement ist die Leistung variabel, dafür sind der Termin und der Aufwand fest definiert. Dies er- möglicht schnelles Handeln bei sich ver- ändernden Prozessen oder Kundenwün- schen. Agiles Projektmanagement wird nicht als Modell verstanden, das ein kon- kretes Vorgehen beschreibt. Vielmehr bil- det es einen Rahmen für agile Prozesse. Um den Anwendern grösstmögliche Frei- heit in der Umsetzung einzuräumen, wer- den keine konkreten Techniken vorgege- ben, sondern Rollen und Abläufe.
+				Agiles Projektmanagement wie Scrum kennt drei zentrale Rollen:
+				– Der Produktverantwortliche ist Fachex- perte und verantwortlich für die Umset- zung der Anforderungen und Kunden- wünsche.
+				– Der Srcum-Master ist zuständig für die Einhaltung der Prozesse.
+				<img src="http://127.0.0.1/wp/wp-content/uploads/2018/06/agile-running-figure-250x180.png" alt=""
+				     width="250" height="180" class="alignright size-medium wp-image-251"  align="left" style="margin: 2%;"/>
+				– Das Team ist die dritte Rolle. Die klassi- sche Verteilung wird aufgebrochen, der Projektleiter wird zum Teammitglied und übernimmt die Rolle eines Moderators.
+				Der Ablauf in der Projektplanung wird nur auf den gerade wichtigsten nächsten Schritt, den sog. «Sprint», reduziert. Der Fokus liegt dabei auf drei Punkten:
+				– Transparenz: Für alle Teammitglieder ist jederzeit ersichtlich, welche Sprints erledigt wurden und welche als nächste anstehen.
+				– Überprüfung: Der aktuelle Projekt- stand und das weitere Vorgehen wer- den regelmässig überprüft.
+				– Anpassung: Korrekturen sind kontinu- ierlich möglich. Zusätzliche Kunden- wünsche können jederzeit eingefloch- ten werden.</p>
+
+
+				Die lediglich grobe Vorstellung des Auf- traggebers bildet den Auftrag für das Projekt.
+					Mit diesem Auslöser startet der Ablauf mit den nachstehenden Schritten:
+
+
+
+
+
+
+				<p class="paragraph-heading-beta">Anforderungen in Story-Cards</p>
+				Konkrete Anforderungen und einzelne Funktionalitäten werden in den Worten des Auftraggebers formuliert. Damit wird sichtbar, welche Ressourcen das Projekt braucht. Qualifikationen im Projektteam werden definiert und der grobe Zeitauf- wand für die Umsetzung festgehalten.
+			</div>
+			<div class="article-unknown-class" style="width:30%; float: left; margin-right: 2%;">
+				<p class="paragraph-heading-beta">Arbeitspakete im Produkt-Backlog</p>
+				Die Anforderungen des Auftraggebers werden grob formuliert. Im Projektver- lauf werden diese immer genauer definiert und angepasst. Daraus ergibt sich das Pro- dukt-Backlog, eine geordnete Auflistung der Anforderungen an das Produkt.
+
+				<p class="paragraph-heading-beta">Prioritäten</p>
+
+				Im nächsten Schritt werden Prioritäten definiert: Welche Elemente und Funktio- nen sind am wichtigsten, um die Zufrie- denheit des Auftraggebers zu gewähr- leisten?
+
+				<p class="paragraph-heading-beta">Sprintplanung</p>
+
+				In der ersten Besprechung zur Sprintpla- nung werden die Rahmenbedingungen abgesteckt. Wo und wann findet ein Team- meeting statt? Welches sind die Teilziele, welches die Meilensteine? In welche Teil- aufgaben (Sprints) lässt sich das Projekt gliedern? Welche Projektdetails und wel- che Schnittstellen sind einzuhalten? Die Antworten auf diese Fragen bilden die Spielregeln und die Struktur für das wei- tere Vorgehen.
+
+				<p class="paragraph-heading-beta">Aufgaben im Sprint-Backlog</p>
+				Jeder Sprint wir in einzelne Aufgaben, Tickets genannt, unterteilt. Alle Tickets sind im sog. Sprint-Backlog aufgeführt. Das ist der Aufgabenplan – er zeigt den Arbeitsvorrat für das Team für den nächs- ten Arbeitszyklus, den Sprint. Jedes Team- mitglied übernimmt eigenverantwortlich einzelne Tickets.
+
+				<p class="paragraph-heading-beta">Arbeitsprozess im Sprint</p>
+				Im Sprint arbeiten die Teammitglieder an ihren Aufgaben, den Tickets.
+				<p class="paragraph-heading-beta">Besprechung im Scrum</p>
+				Während eines täglichen fünfzehnminü- tigen Treffens berichtet jeder der Reihe nach, was er seit der letzten Besprechung gemacht hat und was er bis zur nächsten tun wird. In diesen Treffen werden auch Themen angesprochen, welche die Mit- glieder bei der Arbeit daran hindern, ef- fizient voranzukommen. Der Scrum-Mas- ter muss die Hindernisse aufgreifen und helfen, sie zu beseitigen.
+
+				<p class="paragraph-heading-beta">Fortschrittkontrolle im Sprint-Review-Meeting</p>
+				Jeder Sprint wird durch ein sog. Sprint- Review-Meeting abgeschlossen: Das Team stellt seine Ergebnisse dem Auf- traggeber vor. Diese werden akzeptiert, oder es werden Anpassungen besprochen. In gesonderten Treffen können die Team- mitglieder ihre Zusammenarbeit über- prüfen und festhalten, was intern ver- bessert werden sollte. Die Erkenntnisse werden für zukünftige Projekte genutzt. So wird ein Lernprozess unterstützt.
+
+
+				<p class="paragraph-heading-beta">Projektabschluss</p>
+				Alle Sprints sind durchlaufen, das Projekt ist abgeschlossen.
+			</div>
+			<div class="article-unknown-class" style="width:30%; float: left; margin-right: 2%;">
+				<p class="paragraph-heading-beta">Projektabschluss</p>
+
+				Zur Visualisierung der zu bearbeitenden Teilaufgaben, der Tickets, dient das sog. Task-Board. Hier wird für alle Teammit- glieder der Projektfortschritt aufgezeigt: Aufgabe – begonnen – in Bearbeitung – zu prüfen – erledigt. Das Team steuert sich und den Projektfortschritt selbstständig.
+				Das Sprint-Backlog, der Aufgabenplan, hängt für alle sichtbar an der Wand. Mit dem Task-Board kann der Projektablauf gesteuert werden. Es werden nur so viele Tickets für die Bearbeitung freigegeben, wie vom Projektteam bearbeitet werden können. Engpässe werden sichtbar, und ei- lige Tickets können vorgezogen werden.
+				Für das Kosten- und Risikomanage- ment wird ein Burndown-Chart verwen- det. Er zeigt, ob das Projekt im ursprüng- lich vereinbarten Zeit- und Kostenrahmen bleibt. Durch die täglichen Besprechun- gen werden Budgetverbrauch und Pro- jektfortschritt sehr aktuell abgebildet. Mögliche Korrekturen können eingelei- tet werden.
+				<p class="zum-author"  >
+					Andreas Steinmetz (Jahrgang 1980) ist Mitinhaber eines Büros für Elektro- planung. Im Rahmen seines EMBA- Studiengangs untersucht er Modelle für die effizientere Projektbearbeitung mit Schwerpunkt Ausführung und Planung in der Elektrotechnik. Neben- beruflich arbeitet er als Dozent für Projektleitung. Er lebt mit Frau und Tochter in Uster.
+					In der Praxis setzt Andreas Steinmetz- das agile und das klassische Projekt- management kombiniert ein. Flache Hierarchie, Visualisierung am Task- Board, Aufgaben in Form von Ticket- bearbeitung durch das Team, täglicher kurzer Austausch – all das wirkt sich positiv auf Personalführung, Termine und Projektfinanzen aus.
+					<span class="green-dash-article"></span>
+				</p>
+				<p class="paragraph-heading-alpha">Mut zu Neuem zahlt sich aus</p>
+				Aus Scheu vor Neuem wird agiles Pro- jektmanagement oft als Risiko betrachtet. Doch Agilität, also Flexibilität und Be- weglichkeit, verkürzt die Reaktionszeit,was grundsätzlich ein Vorteil ist. Risiken liegen eher im Bereich zu grosser Teams (wegen des zu grossen Abstimmungsauf- wands), zu langer Sprints und parallel zu bearbeitender Projekte.
+				Agile Projektbearbeitung hat einen positiven Einfluss auf den Projektablauf. Durch die enge Einbindung des Auftrag- gebers intensiviert sich die Kundennähe. Der Austausch und die Kommunikation mit den anderen Beteiligten wie z.B. Ar- chitekten führen in der agilen Projektbe- arbeitung zu Vorteilen, da jeder über den aktuellen Projektstand informiert ist und weiss, welche Aufgaben noch zu erledigen sind, um die Etappenziele zu erreichen. Der effiziente Ablauf spiegelt sich auch in den Finanzen wieder, da zusätzlicher Zeitaufwand für Fehlerkorrekturen ver- hindert wird. Zudem werden Teilaufga- ben nicht vergessen. Je nach Projektaus- wahl kann auch eine hybride Lösung aus klassischem und agilem Projektmanage- ment eine Chance sein.
+				Das Projektmanagement befindet sich im Wandel und sollte weiterentwickelt werden. Genau dieser Wandel macht die Arbeitswelt spannend und faszinierend. Durch die Digitalisierung, z.B. Building Information Modeling, wird sich die Pro- jektbearbeitung im Bereich Elektrotech- nik in Planung und Ausführung im Lauf der nächsten Jahre noch mehrmals trans- formieren. Die agile Bearbeitung soll eine Möglichkeit aufzeigen, die man sofort an- wenden und umsetzen kann.
+				<p class="article-author">Andreas Steinmetz, a.steinmetz@4p0.ch</p>
+
+			</div>
+		</div>
+	</article>

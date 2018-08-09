@@ -1,0 +1,485 @@
+/*=== TABLET ===*/
+@media screen and (min-width: 320px) and (max-width: 520px) {
+	.news {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 3%;
+	}
+	.news div:first-child {
+		display: block;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	
+	.news div:nth-of-type(2) {
+		display: block;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		z-index: 3;
+	}
+	
+	.news img {
+		width: 100%;
+	}
+	.news .title-60-short{
+		font-size: 4vw;
+	}
+	.news .title-24-short{
+		font-size: 3vw;
+	}
+	.services {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.services h3{
+		font-size: 0.7rem;
+	}
+	.services p{
+		font-size: 0.4rem;
+	}
+	.services-article2-list{
+		margin-top: 0!important;
+		margin-bottom: 0 !important;
+		margin-left: 10px !important;
+		font-size: 0.4rem;
+	}
+	.services .title-24{
+	
+	}
+	.services .black-dash{
+	
+	}
+	.services div:first-child{
+		display: inline-block;
+		margin: 10px 10px ;
+		width: 40%;
+		vertical-align: top;
+	}
+	.services div:nth-of-type(2) {
+		display: inline-block;
+		margin-left: 10px;
+		width: 40%;
+		vertical-align: top;
+	}
+	.services img {
+		width: 100%;
+	}
+	
+	/********Page Blog***********/
+	.blog-posts{
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.blog-posts-array{
+		display: block;
+		width: 90%;
+		margin: 10px;
+		margin-right: 50px;
+		vertical-align: top;
+		margin-top: 5%;
+		position:relative;
+		z-index: 3;
+	}
+	.blog-posts-array img {
+		width: 100%;
+	}
+	.blog-post{
+		background: url("../images/Logo-BG.png");
+		background-repeat: no-repeat;
+		background-size: 30%;
+		background-position: -10% 80%;
+		width: 100%;
+	}
+	.blog-post-footer{
+		margin-top: 5%;
+		width: 100%;
+		float: left;
+	}
+	
+	/**********Contacts Page*************/
+	.contacts{
+		margin-top: 5%;
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contacts div:nth-of-type(1){
+		display: block;
+		margin: 10px;
+		vertical-align: top;
+		width: 40%;
+		margin-right: auto;
+		margin-bottom: 10%;
+	}
+	.contacts div:nth-of-type(2) {
+		display: block;
+		vertical-align: top;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contacts .black-dash{
+		width: 1%;
+	}
+	.mapouter{
+		width: 80vw !important;
+	}
+	
+	.gmap_canvas{
+		width: 70vw !important;
+	}
+	
+	
+	/******* HEADER *******/
+	header {
+		background-color: #f9f9f9;
+		display: block;
+		font-size: 24px;
+		color: rgb(0, 0, 0);
+		font-family: Avenir;
+		font-weight: 400;
+		width: 100%;
+		
+	}
+	
+	header .nav-bar {
+		display: none;
+		background-color: #f2f2f2;
+		width: 100%;
+	}
+	header .nav-logo{
+		display: inline-block;
+	}
+	header .icon-Burger-Navigation{
+		display: inline-block;
+		height: 75px;
+		float: right;
+		
+	}
+	header .icon-Burger-Navigation a {
+		margin-top: 60%;
+	}
+	header .Burger-Type-Navigation {
+		display: none;
+		padding-bottom: 2%;
+		text-align: center;
+	}
+	
+	header nav a {
+		display:  block;
+		vertical-align: middle;
+		margin: 30px;
+	}
+	
+	header nav a:first-child {
+	}
+	
+	header nav a:nth-of-type(2) {
+	}
+	
+	header nav a:nth-of-type(6) {
+	
+	}
+	
+	/******* FULL WIDTH TRANSPARENT ROW ********/
+	.full-width-colored-background{
+		background-color: #f9f9f9;
+		position: relative;
+		z-index: -1;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.full-width-colored-background :first-child{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.full-width-colored-background .title-24 {
+		margin-left: 0%;
+	}
+	.full-width-colored-background .normal-text{
+		margin-left: 0%;
+		font-size: 0.5rem !important;
+	}
+	.full-width-colored-background p {
+		margin:0;
+		width: 100%;
+	}
+	.full-width-colored-background .black-dash{
+		width: 27px;
+	}
+	.full-width-colored-background .normal-text p{
+		width: 100% !important;
+		margin: 0;
+	}
+	
+	/********** Images of each member on AboutUs Page ************/
+	.Gallery{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.MemberInfo{
+		display: none;
+	}
+	.TeamImages{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	.TeamImages div{
+		display: block;
+		margin: 10px 60px;
+		margin-bottom: 30px;
+	}
+	.TeamImages div img{
+		width: 90%;
+	}
+	/******* Black dash and Titles *********/
+	.black-dash {
+		height: 2px;
+		width: 27px;
+		margin-bottom: 20px;
+		background-color: black;
+	}
+	.title-24{
+		font-size: 3vw;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		color: rgb(0,0,0);
+		font-family: Avenir Next;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.title-60{
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 4vw;
+		color: rgb(0,0,0);
+		font-family: Avenir Black;
+		font-weight: 900;
+		width: 100%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.title-60-short{
+		margin-bottom: 10%;
+		font-size: 4vw;
+		color: rgb(0,0,0);
+		font-family: Avenir Black;
+		font-weight: 900;
+	}
+	.normal-text {
+		font-size: 0.7em !important;
+		line-height: 1.1rem;
+		color: rgb(0,0,0);
+		font-family: Avenir;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	.normal-text p {
+		font-size: 0.7em !important;
+		line-height: 1.1rem !important;
+		color: rgb(0,0,0);
+		font-family: Avenir;
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+	
+	.services-article2-list{
+		list-style-type: none;
+		margin-left: 40px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	/*** Services ***/
+	.background-services-logo-container{
+		position:relative;
+		z-index: 1;
+	}
+	.background-services-logo-container .background-services-logo img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		top: -150pt;
+		left: -30%;
+	}
+	.background-services-logo-container-bottom{
+		position:relative;
+		z-index: 1;
+	}
+	.background-services-logo-container-bottom .background-services-logo-bottom img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		bottom: 7pt;
+		right: -40%;
+	}
+	.services-container{
+		background-color: #f9f9f9;
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	.services {
+		position: relative;
+		z-index: 2;
+	}
+	.background-img-services .full-width-colored-background {
+		background-color: white;
+	}
+
+	/*** End of Services ***/
+	/*** ABOUT US ***/
+	.TeamImages{
+		position: relative;
+		z-index: 2;
+	}
+	.background-about-logo-container{
+		position:relative;
+		z-index: 1;
+	}
+	.background-about-logo-container .background-about-logo img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		top: -150pt;
+		left: -30%;
+	}
+	.background-about-logo-container-bottom{
+		position:relative;
+		z-index: 1;
+	}
+	.background-about-logo-container-bottom .background-about-logo-bottom img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		bottom: -200pt;
+		right: -15%;
+	}
+	/*** end of about us ***/
+	/*** Training ***/
+	.background-training-logo-container{
+		position:relative;
+		z-index: 1;
+	}
+	.background-training-logo-container .background-training-logo img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		top: 400pt;
+		left: -15%;
+	}
+	/*** End of training ***/
+	/*** Blog ***/
+	.background-blog-logo-container{
+		position:relative;
+		z-index: 1;
+	}
+	.background-blog-logo-container .background-blog-logo img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		top: 0pt;
+		right: -15%;
+	}
+	/*** End of Blog ***/
+	/*** Contacts ***/
+	.background-contacts-logo-container-bottom{
+		position:relative;
+		background-color: red;
+		z-index: 1;
+	}
+	.background-contacts-logo-container-bottom .background-contacts-logo-bottom img {
+		width: 100%;
+		width: 300pt;
+		height: 300pt;
+		position: absolute;
+		bottom: -100pt;
+		right: -15%;
+	}
+	.background-img-kontakt .google-map{
+		position: relative;
+		z-index: 2;
+	}
+	/*End of Contacts */
+	.services-article2-list li:before {
+		content: '-';
+		position: absolute;
+		margin-left: -10px;
+	}
+	.services div:first-child {
+		display: block;
+		width: 90%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.services div:last-child {
+		display: block;
+		width: 90%;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	.black-dash{
+		margin-left:0px;
+		margin-bottom: 3%;
+	}
+	.mapouter{
+		margin-left: 0%; margin-right:0%;
+	}
+	#theForm button{
+		width: 40%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*** Footer ***/
+	footer {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10%;
+		width: 100%;
+	}
+	footer div:first-child{
+		display: inline-block;
+		vertical-align: bottom;
+		padding-left: 5%;
+		width: 43%;
+	}
+	
+	footer div:last-child {
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+	}
+
+	footer .inner-div-float-right{
+		float: right;
+		width: 150px !important;
+	}
+	footer .inner-div-float-right p {
+		margin-left: 30%;
+	}
+	
+	
+}

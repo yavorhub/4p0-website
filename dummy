@@ -1,0 +1,78 @@
+	<div id="members" uk-modal>
+			<div id="tm-one" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+					<div uk-grid>
+						<div >ERFAHRUNG </div>
+						<div >
+								<img src="<?php echo $teamMemberOne['image']['sizes']['large'];?>" />
+						</div>
+						<div >
+							<ul class="uk-list">
+								<li>- Jahrgang 1980</li>
+								<li>- Executive MBA</li>
+								<li>- Dozent für Projektleitung </li>
+								<li>- Elektrotechnik Meister </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="">Next</a>
+			</div>
+			<div id="tm_two" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+
+					<div uk-grid>
+						<div class="team-member-experience">ERFAHRUNG </div>
+						<div>
+							<img src="<?php echo $teamMemberTwo['image']['sizes']['large'];?>" />
+						</div>
+						<div>
+							<ul class="uk-list">
+								<li>- Jahrgang 1980</li>
+								<li>- Executive MBA</li>
+								<li>- Dozent für Projektleitung </li>
+								<li>- Elektrotechnik Meister </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tm_three" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+
+					<div uk-grid>
+						<div class="team-member-experience">ERFAHRUNG </div>
+						<div>
+							<img src="<?php echo $teamMemberThree['image']['sizes']['large'];?>" />
+						</div>
+						<div>
+							<ul class="uk-list">
+								<li>- Jahrgang 1980</li>
+								<li>- Executive MBA</li>
+								<li>- Dozent für Projektleitung </li>
+								<li>- Elektrotechnik Meister </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tm_four" uk-modal>
+				<div class="uk-modal-dialog uk-modal-body">
+					<a class="uk-modal-close uk-close"></a>
+					<div uk-grid>
+						<div class="team-member-experience">ERFAHRUNG </div>
+						<div>
+							<img src="<?php echo $teamMemberFour['image']['sizes']['large'];?>" />
+						</div>
+						<div>
+							<ul class="uk-list">
+								<li>- Jahrgang 1980</li>
+								<li>- Executive MBA</li>
+								<li>- Dozent für Projektleitung </li>
+								<li>- Elektrotechnik Meister </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
