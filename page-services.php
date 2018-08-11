@@ -30,17 +30,13 @@ $services_reference['body'] = get_field('services_reference_body');
 	</div>
 	
 	<div class="services-container">
-		<div style="display:none">
-			<h3 class="title-24"><?php echo $services_article2['header'];?></h3>
-			<p class="black-dash"></p>
-		</div>
 		<article class="services">
 				<div>
 					<img src="<?php echo $services_article2['image']['sizes']['large'];?>" />
 				</div>
-				<div>
+				<div class="services-text-container">
 						<h3 class="title-24"><?php echo $services_article2['header'];?></h3>
-						<p class="black-dash"></p>
+					<p class="black-dash"></p>
 						<div class="normal-text">
 							<?php echo $services_article2['body'];?>
 						</div>

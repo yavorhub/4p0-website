@@ -114,6 +114,10 @@
 		if( is_page( array( 'about',) ) ){
 			wp_enqueue_script( '4p0', get_template_directory_uri() . '/assets/js/4p0.js', array(), '1.0.1', true );
 		}
+		if( is_page(array('services'))){
+			wp_enqueue_script( 'moveTheTitle', get_template_directory_uri() . '/assets/js/moveTitles.js', array(), '1.0.0', true );
+			
+		}
 		
 		wp_localize_script('contactForm', 'object_name', $translation_array);
 	}
@@ -380,15 +384,15 @@
 		$labels = array(
 			'name' => 'Team Members',
 			'singular_name' => 'teammembers',
-			'add_new' => 'Add Item',
-			'all_items' => 'All Items',
-			'add_new_item' => 'Add New Item',
-			'edit_item' => 'Edit Item',
-			'new_item' => 'New Item',
-			'view_item' => 'View Item',
-			'search_item' => 'Search Portfolio',
-			'not_found' => "Item Not Found",
-			'not_found_in_trash' => "Item not found in trash",
+			'add_new' => 'Add Team Member',
+			'all_items' => 'All Team Members',
+			'add_new_item' => 'Add New Team Member',
+			'edit_item' => 'Edit Team Member',
+			'new_item' => 'New Team Member',
+			'view_item' => 'View Team Member',
+			'search_item' => 'Search Team Member',
+			'not_found' => "Team Member Not Found",
+			'not_found_in_trash' => "Team Member not found in trash",
 			'parent_item_colon' => "Parent Items"
 		);
 		$args = array (
@@ -400,12 +404,13 @@
 			'rewrite' => true,
 			'capability_type' => 'post',
 			'hierarchical' => false,
-			'support' => array(
+			'supports' => array(
 				'title',
-				'editor',
 				'excerpt',
 				'thumbnail',
-				'revisions'
+				'revisions',
+				'custom-fields',
+				'post-formats',
 			),
 			'taxonomies' => array(
 				'category', 'post_tag',

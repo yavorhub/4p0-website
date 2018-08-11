@@ -1,17 +1,20 @@
 
+
 var slideIndex = 0;
 
-function minusDivs(n){
+function minusDivs(){
+	console.log(document.activeElement)
 	slideIndex = slideIndex-1;
 	if(slideIndex < 0){
-		slideIndex = 1;
+		slideIndex = 4;
 		return showDivs(slideIndex);
 	}
 	return showDivs(slideIndex);
 }
-function plusDivs(n) {
+function plusDivs() {
+	console.log(document.activeElement)
 	slideIndex = slideIndex+1;
-	if(slideIndex >1){
+	if(slideIndex >4){
 		slideIndex=0;
 		return showDivs(slideIndex)
 	}
@@ -30,6 +33,7 @@ function showDivs(n) {
 }
 
 function displayModal(startFromMember){
+	slideIndex = startFromMember;
 	var modalBox = document.getElementById('modalBox');
 	var GalleryRotationContaier = document.getElementsByClassName('GalleryRotationContainer')[0];
 	var GalleryRotation = document.getElementsByClassName('GalleryRotation')[0];
@@ -37,7 +41,7 @@ function displayModal(startFromMember){
 	GalleryRotation.style.display = "inline-block";
 	modalBox.style.display="inline-block";
 	modalBox.style.opacity=".9";
-	showDivs(startFromMember);
+	showDivs(slideIndex);
 }
 function closeModalButton(){
 	var cancelButton = document.getElementById('CloseModalButton');
@@ -72,5 +76,6 @@ function closeModalButton(){
 				$(this).addClass('empty-para');
 			}
 		});
+
 })();
 

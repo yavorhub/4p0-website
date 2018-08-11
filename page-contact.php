@@ -28,19 +28,22 @@
 							<button type="submit" id="contactForm-Submit">SENDEN</button>
 						</form>
 					</div>
-					<div class="google-map"  >
-						<div class="mapouter" >
-							<div class="gmap_canvas" >
-								<iframe width="1080" height="500" id="gmap_canvas"
-								        src="https://maps.google.com/maps?q=Bubikerstrasse1%20%208645%20Rapperswil-Jona&t=&z=15&ie=UTF8&iwloc=&output=embed"
-								        frameborder="0" scrolling="no" marginheight="0" marginwidth="100">
-								
-								</iframe>
-								<a href="https://www.pureblack.de"></a>
-							</div>
-							<style>.mapouter{text-align:center;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}
-							</style></div>
-					</div>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKTIccZO7M3A_bx166oK9k36Vy6BSotwg&callback=initMap"></script>
+			<div id="googleMap">
+
+			</div>
+			<script>
+				// Initialize and add the map
+				function initMap() {
+					// The location of Uluru
+					var uluru = {lat: -25.344, lng: 131.036};
+					// The map, centered at Uluru
+					var map = new google.maps.Map(
+						document.getElementById('googleMap'), {zoom: 4, center: uluru});
+					// The marker, positioned at Uluru
+					var marker = new google.maps.Marker({position: uluru, map: map});
+				}
+			</script>
 		</article>
 	<div class="background-contacts-logo-container-bottom">
 		<div class="background-contacts-logo-bottom">
@@ -49,6 +52,7 @@
 	</div>
 	
 <?php get_footer(); ?>
+
 </div>
 
 	

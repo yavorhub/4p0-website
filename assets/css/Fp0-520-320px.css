@@ -46,7 +46,7 @@
 		font-size: 0.4rem;
 	}
 	.services-article2-list{
-		margin-top: 0!important;
+		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 		margin-left: 10px !important;
 		font-size: 0.4rem;
@@ -303,7 +303,7 @@
 	
 	.services-article2-list{
 		list-style-type: none;
-		margin-left: 40px;
+		margin-left: 20px !important;
 		margin-top: 10px;
 		margin-bottom: 20px;
 	}
@@ -334,8 +334,15 @@
 	}
 	.services-container{
 		background-color: #f9f9f9;
-		padding-top: 75px;
+		padding-top: 25px;
 		padding-bottom: 75px;
+		margin-top: 5%;
+	}
+	.services-container .title-24{
+		margin-left: 5%;
+	}
+	.services-container .black-dash{
+		margin-left: 5%;
 	}
 	.services {
 		position: relative;
@@ -428,17 +435,26 @@
 		position: absolute;
 		margin-left: -10px;
 	}
-	.services div:first-child {
+	.services div:nth-of-type(1) {
 		display: block;
 		width: 90%;
 		margin-left:auto;
 		margin-right: auto;
 	}
-	.services div:last-child {
+	.services div:nth-of-type(2) {
 		display: block;
 		width: 90%;
 		margin-left:auto;
 		margin-right: auto;
+	}
+	.services div:nth-of-type(2) .normal-text {
+		width: 100% !important;
+	}
+	.services h3{
+		margin-left: 5%;
+	}
+	.services .black-dash{
+		margin-left: 5%;
 	}
 	.black-dash{
 		margin-left:0px;
