@@ -1,29 +1,30 @@
 
 
 var slideIndex = 0;
+var maxSlideIndex = 0;
 
 function minusDivs(){
-	console.log(document.activeElement)
 	slideIndex = slideIndex-1;
 	if(slideIndex < 0){
-		slideIndex = 4;
+		slideIndex = maxSlideIndex-1;
 		return showDivs(slideIndex);
 	}
 	return showDivs(slideIndex);
 }
 function plusDivs() {
-	console.log(document.activeElement)
 	slideIndex = slideIndex+1;
-	if(slideIndex >4){
-		slideIndex=0;
+	if(slideIndex > maxSlideIndex-1){
+		slideIndex = 0;
 		return showDivs(slideIndex)
 	}
 	return showDivs(slideIndex);
 }
 
 function showDivs(n) {
+
 	var i;
 	var elements = document.getElementsByClassName("MemberCard");
+	maxSlideIndex = elements.length;
 	for (i = 0; i < elements.length; i++) {
 		elements[i].style.display = "none";
 	}
