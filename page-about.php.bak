@@ -1,137 +1,29 @@
-<?php get_header(); ?>
 <?php
-$teamMemberOne['name'] = get_field('tm_member_one_name');
-$teamMemberOne['image'] = get_field('tm_member_one_image');
-$teamMemberOne['experience'] = get_field('tm_member_one_short_experience');
-$teamMemberOne['accomplishments'] = get_field('tm_member_one_accomplishments');
-$teamMemberTwo['name'] = get_field('tm_member_two_name');
-$teamMemberTwo['image'] = get_field('tm_member_two_image');
-$teamMemberTwo['experience'] = get_field('tm_member_two_short_experience');
-$teamMemberTwo['accomplishments'] = get_field('tm_member_two_accomplishments');
-$teamMemberThree['name'] = get_field('tm_member_three_name');
-$teamMemberThree['image'] = get_field('tm_member_three_image');
-$teamMemberThree['experience'] = get_field('tm_member_three_short_experience');
-$teamMemberThree['accomplishments'] = get_field('tm_member_three_accomplishments');
-$teamMemberFour['name'] = get_field('tm_member_four_name');
-$teamMemberFour['image'] = get_field('tm_member_four_image');
-$teamMemberFour['experience'] = get_field('tm_member_four_short_experience');
-$teamMemberFour['accomplishments'] = get_field('tm_member_four_accomplishments');
-$article['header'] = get_field('tm_article_header');
-$article['body'] = get_field('tm_article_text');
-$article['image'] = get_field('tm_article_image');
-$customQuote['title'] = get_field('custom_quote_title');
-$customQuote['text'] = get_field('custom_quote_text');
-
-?>
-<div class="a-container">
-	<div class="container-content">
-		<div class="container-content-block">
-	<!--Main Article -->
-			<article >
-				<div class="container-page-title">
-					<h1><?php echo get_field('tm_article_header');?></h1>
-				</div>
-				<div class="container-content-block-body">
-					<p><?php echo get_field('tm_article_text');?></p>
-				</div>
-				<div class="container-content-block-image">
-						<img src="<?php
-							$imagearray = get_field('tm_article_image');
-							echo $imagearray['sizes']['large'];
-						?>"/>
-				</div>
-			</article>
-		</div>
+	$membersData = array();
+// Restore original Post Data
 	
-		<!--Custom Quote -->
-		<div class="container-content-block-uneven">
-			<div class="container-content-block-body">
-				<blockquote>
-				<div class="title-block">
-					<h1><?php echo get_field('custom_quote_title');?></h1>
-					<div class="black-dash"></div> <!---Black Dash --->
-				</div>
-					<p><?php echo trim(get_field('custom_quote_text')); ?></p>
-				</blockquote>
-			</div>
-		</div>
-		<!--Make an array of data for modal  --->
-		<!-- Test Panels in a grid -->
-		<a href="#modal-close-default" uk-toggle>Default</a>
-		<div id="modal-close-default" class="uk-modal-container" uk-modal>
-			<div class="uk-modal-dialog uk-modal-body">
-				<div class="title-block">
-					<h1>Team</h1>
-					<div class="black-dash"></div> <!---Black Dash --->
-				</div>
-				<button class="uk-modal-close-default" type="button" uk-close></button>
-				<button id="team-members-back" onclick="plusDivs(-1)" style="float: left">&#10094;</button>
-				<button id="team-members-forward" onclick="plusDivs(+1)" style="float: right">&#10095;</button>
-				<div class="mySlides">
-					<div class="uk-grid">
-						<div class="uk-width-1-3" > <?php echo $teamMemberOne['experience'];?></div>
-						<div class="uk-width-1-3"><img src="<?php echo $teamMemberOne['image']['sizes']['medium'];?>" /></div>
-						<div class="uk-width-1-3" style="border: 1px solid black"><?php echo $teamMemberOne['accomplishments'];?></div>
-					</div>
-				</div>
-				<div class="mySlides">
-					<div class="uk-grid">
-						<div class="uk-width-1-3"> <?php echo $teamMemberTwo['experience'];?></div>
-						<div class="uk-width-1-3"><img src="<?php echo $teamMemberTwo['image']['sizes']['medium'];?>" /></div>
-						<div class="uk-width-1-3"><?php echo $teamMemberTwo['accomplishments'];?></div>
-					</div>
-				</div>
-				<div class="mySlides">
-					<div class="uk-grid">
-						<div class="uk-width-1-3"> <?php echo $teamMemberThree['experience'];?></div>
-						<div class="uk-width-1-3"><img src="<?php echo $teamMemberThree['image']['sizes']['medium'];?>" /></div>
-						<div class="uk-width-1-3"><?php echo $teamMemberThree['accomplishments'];?></div>
-					</div>
-				</div>
-				<div class="mySlides">
-					<div class="uk-grid">
-						<div class="uk-width-1-3"> <?php echo $teamMember['experience'];?></div>
-						<div class="uk-width-1-3"><img src="<?php echo $teamMemberFour['image']['sizes']['medium'];?>" /></div>
-						<div class="uk-width-1-3"><?php echo $teamMemberOne['accomplishments'];?></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
+	$args = array (
+		'post_type'              => array( 'teammembers' ),
+		'post_status'            => array( 'publish' ),
+		'nopaging'               => true,
+		'order'                  => 'ASC',
+		'orderby'                => 'menu_order',
+	);
 	
-
+	// The Query
+	$services = new WP_Query( $args );
 	
-		<!-- Team Members images-->
-		<div class="container-content-block">
-					<div class="title-block">
-						<h1>Team</h1>
-						<div class="black-dash"></div> <!---Black Dash --->
-					</div>
-					<div class="container-content-block-member">
-						<a href="#tm_one">
-							<img src="<?php echo $teamMemberOne['image']['sizes']['large'];?>" />
-							</a>
-							<div class="title-block"><?php echo get_field('tm_member_one_name'); ?></div>
-					</div>
-					<div class="container-content-block-member">
-						<a href="#tm_two">
-							<img src="<?php echo $teamMemberTwo['image']['sizes']['large'];?>" />
-									</a>
-									<div class="title-block"><?php echo $teamMemberTwo['name']; ?></div>
-							</div>
-						<div class="container-content-block-member">
-							<a href="" >
-								<img src="<?php echo $teamMemberThree['image']['sizes']['large'];?>" />
-							</a>
-								<div class="title-block"><?php echo get_field('tm_member_three_name'); ?></div>
-							</div>
-						<div class="container-content-block-member">
-							<a href="#tm-four" uk-toggle >
-								<img src="<?php echo $teamMemberFour['image']['sizes']['large'];?>" />
-							</a>
-								<div class="title-block"><?php echo $teamMemberFour['name']; ?></div>
-						</div>
-		</div>
-	</div>
-</div>
-<?php get_footer(); ?>
+	// Acquire Members Data
+	if ( $services->have_posts() ) {
+		while ($services->have_posts()) :
+			$services->the_post();
+			$membersData['name'][] =  the_title(); // the name
+			$values = get_post_custom(the_ID());
+			$membersData['thumbnail'][] =  get_the_post_thumbnail(); // get the image;
+			$membersData['short_bio'][] = $values['short_experience'];
+			$membersData['accomplishments'][] = $values['accomplishments'];
+			$membersData['email'][] = $values['email'];
+		endwhile;
+	}
+	$membersTotal = count($membersData['name']);
+	?>

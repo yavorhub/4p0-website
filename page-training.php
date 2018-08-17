@@ -11,11 +11,13 @@
 			</div>
 		</div>
 		<article class="news">
-			<div>
+			<div class="news-text">
 				<h1 class="title-60-short" >TRAINING</h1>
 				<div class="normal-text"><?php echo $training_article1['body'];?></div>
+			
+			
 			</div>
-			<div>
+			<div  class="news-image">
 				<img src="<?php echo $training_article1['image']['sizes']['large'];?>" />
 			</div>
 		</article>

@@ -100,30 +100,32 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.contacts div:nth-of-type(1){
+	.contacts .contacts-info{
 		margin-top: 5% !important;
 		display: inline-block;
 		margin: 10px;
 		vertical-align: top;
 	}
-	.contacts div:nth-of-type(2) {
+	.contacts .contacts-contact-form {
 		margin-top: 5% !important;
 		display: inline-block;
-		margin-left: 100px;
+		margin-left: 15%;
 		vertical-align: top;
-		width: 50%;
+		width:60%;
 	}
-
-	.contacts div img{
+	.contacts #map{
 		margin-top: 5%;
-		width: 1022px;
-		margin-left: auto;
-		margin-right: auto;
+		height: calc(60vh);
+		width: 100%;
 	}
 	
 	.contacts .black-dash{
 		margin-left:0px;
 	}
+	
+
+
+	
 	.mapouter{
 		width: 80vw !important;
 	}
@@ -239,15 +241,15 @@
 		margin-bottom: 30px;
 	}
 	.TeamImages div img{
-		width: 90%;
 	}
-	.TeamImages h3{
-		width: 300px;
+	.TeamImages div h3{
+		width: 320px;
+		text-align: center;
 	}
 	/******* Black dash and Titles *********/
 	
 	.title-24{
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 		padding-top: 1%;
 		padding-bottom: 1%;
 		color: rgb(0,0,0);
@@ -351,6 +353,12 @@
 	.TeamImages{
 		position: relative;
 		z-index: 2;
+	}
+	.TeamImages div:nth-child(1n+2){
+		margin-top: 75px;
+	}
+	.TeamImages div:nth-child(2n+1){
+		margin-left: 10%;
 	}
 	.background-about-logo-container{
 		position:relative;

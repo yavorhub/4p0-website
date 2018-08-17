@@ -3,35 +3,46 @@
 	Template Name Page About
 	*/
 	get_header();
-	$teamMemberOne['name'] = get_field('tm_member_one_name');
-	$teamMemberOne['image'] = get_field('tm_member_one_image');
-	$teamMemberOne['experience'] = get_field('tm_member_one_short_experience');
-	$teamMemberOne['email'] = get_field('tm_member_one_email');
-	$teamMemberOne['accomplishments'] = get_field('tm_member_one_accomplishments');
+	$membersData = array();
+// Restore original Post Data
 	
-	$teamMemberTwo['name'] = get_field('tm_member_two_name');
-	$teamMemberTwo['image'] = get_field('tm_member_two_image');
-	$teamMemberTwo['experience'] = get_field('tm_member_two_short_experience');
-	$teamMemberTwo['email'] = get_field('tm_member_two_email');
-	$teamMemberTwo['accomplishments'] = get_field('tm_member_two_accomplishments');
+	$args = array (
+		'post_type'              => array( 'teammembers' ),
+		'post_status'            => array( 'publish' ),
+		'nopaging'               => true,
+		'order'                  => 'ASC',
+		'orderby'                => 'post_date',
+	);
 	
-	$teamMemberThree['name'] = get_field('tm_member_three_name');
-	$teamMemberThree['image'] = get_field('tm_member_three_image');
-	$teamMemberThree['experience'] = get_field('tm_member_three_short_experience');
-	$teamMemberThree['email'] = get_field('tm_member_three_email');
-	$teamMemberThree['accomplishments'] = get_field('tm_member_three_accomplishments');
+	// The Query
+	$services = new WP_Query( $args );
 	
-	$teamMemberFour['name'] = get_field('tm_member_four_name');
-	$teamMemberFour['image'] = get_field('tm_member_four_image');
-	$teamMemberFour['experience'] = get_field('tm_member_four_short_experience');
-	$teamMemberFour['email'] = get_field('tm_member_four_email');
-	$teamMemberFour['accomplishments'] = get_field('tm_member_four_accomplishments');
+	// Acquire Members Data
+	if ( $services->have_posts() ) {
+		while ($services->have_posts()) :
+			$services->the_post();
+			$membersData['name'][] =  get_the_title(); // the name
+			$values = get_post_custom(get_the_ID());
+			$membersData['thumbnail'][] =  get_the_post_thumbnail(get_the_ID(), array('320','312')); // get the image;
+			$membersData['short_bio'][] = $values['short_experience'][0];
+			$membersData['accomplishments'][] = $values['accomplishments'][0];
+			$membersData['email'][] = $values['email'][0];
+		endwhile;
+	}
+	$membersTotal = count($membersData['name']);
+	$aboutUsData = array();
 	
-	$teamMemberFive['name'] = get_field('tm_member_five_name');
-	$teamMemberFive['image'] = get_field('tm_member_five_image');
-	$teamMemberFive['experience'] = get_field('tm_member_five_short_experience');
-	$teamMemberFive['email'] = get_field('tm_member_five_email');
-	$teamMemberFive['accomplishments'] = get_field('tm_member_five_accomplishments');
+// Acquire AboutUs Data
+	$services = new WP_Query( "pagename=about" );
+	
+	// Acquire Members Data
+	if ( $services->have_posts() ) {
+		while ($services->have_posts()) :
+			$services->the_post();
+			$aboutUsData['name'][] =  get_the_title(); // the name
+			$values = get_post_custom(get_the_ID());
+		endwhile;
+	}
 	
 	$article['header'] = get_field('tm_article_header');
 	$article['body'] = get_field('tm_article_text');
@@ -71,32 +82,13 @@
 			<p class="black-dash"></p>
 		</div>
 		<section class="TeamImages">
+			<?php for($i = 0; $i < $membersTotal; $i ++): ?>
 			<div >
-				<a href="javascript:displayModal(0)"><img src="<?php echo $teamMemberOne['image']['sizes']['large'];?>" /></a>
-				<h3 class="title-24"><?php echo $teamMemberOne['name'];?></h3>
+				<a href="javascript:displayModal(<?php echo $i; ?>)"><?php echo $membersData['thumbnail'][$i];?></a>
+				<h3 class="title-24"><?php echo $membersData['name'][$i];?></h3>
 			</div>
-			<div >
-				<a href="javascript:displayModal(1)"><img src="<?php echo $teamMemberTwo['image']['sizes']['large'];?>" /></a>
-				<h3 class="title-24"><?php echo $teamMemberTwo['name'];?></h3>
-			</div>
-			<?php if($teamMemberThree['name']):?>
-				<div>
-					<a href="javascript:displayModal(2)"><img src="<?php echo $teamMemberThree['image']['sizes']['large'];?>" /></a>
-					<h3 class="title-24"><?php echo $teamMemberThree['name'];?></h3>
-				</div>
-			<?php endif;?>
-			<?php if($teamMemberFour['name']):?>
-				<div>
-					<a href="javascript:displayModal(3)"><img src="<?php echo $teamMemberFour['image']['sizes']['large'];?>" /></a>
-					<h3 class="title-24"><?php echo $teamMemberFour['name'];?></h3>
-				</div>
-			<?php endif;?>
-			<?php if($teamMemberFive['name']):?>
-				<div>
-					<a href="javascript:displayModal(4)"><img src="<?php echo $teamMemberFive['image']['sizes']['large'];?>" /></a>
-					<h3 class="title-24"><?php echo $teamMemberFive['name'];?></h3>
-				</div>
-			<?php endif;?>
+			
+			<?php endfor;?>
 		</section>
 	</section>
 
@@ -112,101 +104,37 @@
 					<img width="50" height="50"src="<?php  bloginfo('template_url');?>/assets/images/light/long-arrow-left.svg" />
 				</a>
 			</div>
-
+			<?php for($i = 0; $i< $membersTotal ; $i++):?>
 			<div class="MemberCard">
 				<div class="MemberCardContainer">
 					<div class="member-experience">
 						<h3 class="title-24">ERFAHRUNG </h3>
 						<div class="normal-text">
-							<?php echo $teamMemberOne['experience'];?>
+							<?php echo $membersData['short_bio'][$i];?>
+							<p class="member-email"><a class="link-color" href="mailto:<?php echo $membersData['email'][$i];?>">
+									<?php if($membersData['email'][$i]) : ;?>
+									<?php echo $membersData['email'][$i];?></a>   <i class="fal fa-long-arrow-right link-color"></i> </p>
+									<?php endif;?>
 						</div>
+						
 					</div>
 					<div class="member-image">
-						<img src="<?php echo $teamMemberOne['image']['sizes']['large']; ?>" />
+						<?php echo $membersData['thumbnail'][$i]; ?>
 					</div>
 					<div class="member-accomplishments">
 						<div class="member-accomplishments-inline-element">
-							<h3 class="title-24"><?php echo $teamMemberOne['name'];?></h3>
-							<div class="normal-text"><?php echo $teamMemberOne['accomplishments'];?></div>
+							<h3 class="title-24"><?php echo $membersData['name'][$i];?></h3>
+							<div class="normal-text"><?php echo $membersData['accomplishments'][$i];?></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="MemberCard">
-				<div class="MemberCardContainer">
-					<div class="member-experience">
-						<h3 class="title-24">ERFAHRUNG </h3>
-						<div class="normal-text"><?php echo $teamMemberTwo['experience'];?></div>
-					</div>
-					<div class="member-image">
-						<img src="<?php echo $teamMemberTwo['image']['sizes']['large']; ?>" />
-					</div>
-					<div class="member-accomplishments">
-						<div class="member-accomplishments-inline-element">
-							<h3 class="title-24"><?php echo $teamMemberTwo['name'];?></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Add condition for team members 3-5 -->
-			<?php if($teamMemberThree['name']):?>
-				<div class="MemberCard">
-					<div class="MemberCardContainer">
-						<div class="member-experience">
-							<h3 class="title-24">ERFAHRUNG </h3>
-							<div class="normal-text"><?php echo $teamMemberThree['experience'];?></div>
-						</div>
-						<div class="member-image">
-							<img src="<?php echo $teamMemberThree['image']['sizes']['large']; ?>" />
-						</div>
-						<div class="member-accomplishments">
-							<div class="member-accomplishments-inline-element">
-								<h3 class="title-24"><?php echo $teamMemberThree['name'];?></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php endif;?>
-			<?php if($teamMemberFour['name']):?>
-				<div class="MemberCard">
-					<div class="MemberCardContainer">
-						<div class="member-experience">
-							<h3 class="title-24">ERFAHRUNG </h3>
-							<div class="normal-text"><?php echo $teamMemberFour['experience'];?></div>
-						</div>
-						<div class="member-image">
-							<img src="<?php echo $teamMemberFour['image']['sizes']['large']; ?>" />
-						</div>
-						<div class="member-accomplishments">
-							<div class="member-accomplishments-inline-element">
-								<h3 class="title-24"><?php echo $teamMemberFour['name'];?></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php endif;?>
-			<?php if($teamMemberFive['name']):?>
-				<div class="MemberCard">
-					<div class="MemberCardContainer">
-						<div class="member-experience">
-							<h3 class="title-24">ERFAHRUNG </h3>
-							<div class="normal-text"><?php echo $teamMemberFive['experience'];?></div>
-						</div>
-						<div class="member-image">
-							<img src="<?php echo $teamMemberFive['image']['sizes']['large']; ?>" />
-						</div>
-						<div class="member-accomplishments">
-							<div class="member-accomplishments-inline-element">
-								<h3 class="title-24"><?php echo $teamMemberFive['name'];?></h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			<?php endif;?>
+			<?php endfor;?>
+		
 			<a href="javascript:closeModalButton()" id="CloseModalButton">&#x2A2F;</a>
 
 			<div id="link-next">
-				<a href="javascript:plusDivs()"  >
+				<a href="javascript:plusDivs()">
 					<img width="50" height="50"src="<?php  bloginfo('template_url');?>/assets/images/light/long-arrow-right.svg" />
 				</a>
 			</div>

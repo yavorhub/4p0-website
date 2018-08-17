@@ -5,14 +5,14 @@
 		<div class="green-title">Wissen</div>
 		<div class="green-dash"></div>
 	</div>
-	<article class="blog-post-single" style="">
+	<article class="blog-post-single">
 
-		<div class="article-title" style="">Agiles Projektmanagement verbessert die Projektbearbeitung</div>
-		<div class="article-column-container" style="" >
-			<div class="article-subtitle" style="margin-bottom: 5%;  font-family: Avenir; ">
+		<div class="article-title">Agiles Projektmanagement verbessert die Projektbearbeitung</div>
+		<div class="article-column-container" >
+			<div class="article-subtitle"">
 				Heutige Bauprojekte sind nicht nur kompliziert, sondern auch dynamisch, verändern sich also während des Bauablaufs. Dies ruft nach einer Anpassung des Projektmanagements.
 			</div>
-			<div class="blog-article" style="">
+			<div class="blog-article">
 				<p><span class="green-dash-article"></span>Bearbeitungstempo und Kostendruck erhöhen die Belastung von Projektverantwortlichen.
 				«Scrum» als Unterform des sog. «agilen» Projektmanagements ist ein Lösungsansatz und hat der IT-Branche zu einer schnellen, flexiblen
 				Bearbeitung von Projektaufgaben verholfen. Die erste Frage, die Sie sich jetzt stellen werden, ist sicherlich: «Kann ein IT-Projekt mit
@@ -46,21 +46,21 @@
 				</ul>
 				
 				<img class="agile-running-figure" src="http://4p0.icontest2.com/wp-content/uploads/2018/07/agile-running-figure.png" alt=""
-				     width="250" height="180" class="alignright size-medium wp-image-284"  style="" />
+				     width="250" height="180" class="alignright size-medium wp-image-284"   />
 				Die lediglich grobe Vorstellung des Auftraggebers bildet den Auftrag für das Projekt.
 				Mit diesem Auslöser startet der Ablauf mit den nachstehenden Schritten:
 			</div>
 		</div>
 		<div class="article-main-image">
-			<figure style=" width: 100%; margin: 1%; margin-right: 8%; ">
+			<figure>
 				<img src="http://4p0.icontest2.com/wp-content/uploads/2018/07/agile-process.png" alt=""
 				    width="100%" height="100%"  class="alignright size-full wp-image-185"  />
-				<figcaption style="margin-top: 1%">
+				<figcaption>
 					«Agile» – auf Deutsch beweglich, wendig, flexibel – bezeichnet eine aus der Informatik stammende Form des Projektmanagements, die zunehmend auch in anderen Branchen Anwendung findet
 				</figcaption>
 			</figure>
 		</div>
-		<div class="article-post-column2" style="">
+		<div class="article-post-column2">
 			<p class="paragraph-heading-beta">Anforderungen in Story-Cards</p>
 			Konkrete Anforderungen und einzelne Funktionalitäten werden in den Worten des Auftraggebers formuliert. Damit wird sichtbar, welche Ressourcen das Projekt braucht.
 			Qualifikationen im Projektteam werden definiert und der grobe Zeitaufwand für die Umsetzung festgehalten.
@@ -95,7 +95,7 @@
 			<p>Zur Visualisierung der zu bearbeitenden Teilaufgaben, der Tickets, dient das sog. Task-Board. Hier wird für alle Teammitglieder der Projektfortschritt aufgezeigt:
 				– Aufgabe – begonnen – in Bearbeitung – zu prüfen – erledigt. Das Team steuert sich und den Projektfortschritt selbstständig. </p>
 		</div>
-		<div class="article-post-column3" style="" >
+		<div class="article-post-column3" >
 			
 			<p><span class="empty-space-para"></span>Das Sprint-Backlog, der Aufgabenplan, hängt für alle sichtbar an der Wand.
 			Mit dem Task-Board kann der Projektablauf gesteuert werden. Es werden nur so viele Tickets für die Bearbeitung freigegeben, wie vom Projektteam bearbeitet werden können. Engpässe werden sichtbar,
@@ -103,8 +103,8 @@
 			<p><span class="empty-space-para"></span>Für das Kosten- und Risikomanagement wird ein Burndown-Chart verwendet.
 			Er zeigt, ob das Projekt im ursprünglich vereinbarten Zeitund Kostenrahmen bleibt. Durch die täglichen Besprechun- gen werden Budgetverbrauch und Projektfortschritt sehr aktuell abgebildet.
 				Mögliche Korrekturen können eingeleitet werden.</p>
-			<div class="zum-author" >
-				<p style="margin-bottom: 2%; font-weight: 900">ZUM AUTHOR</p>
+			<div class="zum-author">
+				<p >ZUM AUTHOR</p>
 				<p>
 				Andreas Steinmetz (Jahrgang 1980) ist Mitinhaber eines Büros für Elektro- planung. Im Rahmen seines EMBA- Studiengangs untersucht er Modelle für die effizientere Projektbearbeitung mit
 				Schwerpunkt Ausführung und Planung in der Elektrotechnik. Neben- beruflich arbeitet er als Dozent für Projektleitung. Er lebt mit Frau und Tochter in Uster.
@@ -123,7 +123,7 @@
 			<p><span class="empty-space-para"></span>Das Projektmanagement befindet sich im Wandel und sollte weiterentwickelt werden. Genau dieser Wandel macht die Arbeitswelt spannend und faszinierend.
 				Durch die Digitalisierung, z.B. Building Information Modeling, wird sich die Projektbearbeitung im Bereich Elektrotechnik in Planung und Ausführung im Lauf der nächsten Jahre noch mehrmals
 				transformieren. Die agile Bearbeitung soll eine Möglichkeit aufzeigen, die man sofort anwenden und umsetzen kann.</p>
-			<p class="article-author" style="text-align: right; margin-top: 1%;" >Andreas Steinmetz, <a href="mailto:a.steinmetz@4p0.ch"> <span class="article-author">ca.steinmetz@4p0.ch</span></a></p>
+			<p class="article-author" style="text-align: right; margin-top: 1%;">Andreas Steinmetz, <a href="mailto:a.steinmetz@4p0.ch"> <span class="article-author">ca.steinmetz@4p0.ch</span></a></p>
 		</div>
 
 

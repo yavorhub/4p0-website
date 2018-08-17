@@ -1,0 +1,27 @@
+<?php
+	$args = array (
+		'post_type'              => array( 'teammembers' ),
+		'post_status'            => array( 'publish' ),
+		'nopaging'               => true,
+		'order'                  => 'ASC',
+		'orderby'                => 'menu_order',
+	);
+	
+	// The Query
+	$services = new WP_Query( $args );
+	
+	// The Loop
+	if ( $services->have_posts() ) {
+		while ( $services->have_posts() ) {
+			$services->the_post();
+			echo the_title(); // the name
+			$values = get_post_custom(the_ID());
+			echo get_the_post_thumbnail(); // get the image;
+			print_r($values['short_experience']); //get short bio
+			print_r($values['accomplishments']); // get accomplishments
+			
+		}
+	} else {
+		echo "No posts found";
+	}
+?>

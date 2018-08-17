@@ -67,7 +67,7 @@
 		width: 5%;
 		vertical-align: top;
 		position: absolute;
-		top: 0%;
+		bottom: 5%;
 		left: 1%;
 	}
 	#link-previous a{
@@ -79,6 +79,9 @@
 		margin-left: 2%;
 		vertical-align: top;
 		margin-top: 5%;
+		width: 27%;
+		margin-right: 5%;
+		margin-top: 0;
 	}
 	.MemberCard .member-image{
 		display: inline-block;
@@ -105,14 +108,16 @@
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
-	
+	.MemberCard .member-email{
+		margin-top: 2%;
+	}
 	#link-next{
 		display: inline-block;
 		height: 100%;
 		width: 5%;
 		vertical-align: top;
 		position: absolute;
-		top: 0%;
+		bottom: 5%;
 		right: 0%;
 	}
 	#link-next a{
@@ -212,7 +217,8 @@
 		display: inline-block;
 		margin-left: 2%;
 		vertical-align: top;
-		margin-top: 2%;
+		width: 27%;
+		margin-right: 2%;
 	}
 	.MemberCard .member-image{
 		display: inline-block;
@@ -220,7 +226,6 @@
 		vertical-align: center;
 	}
 	.MemberCard .member-image img {
-		width: 90%;
 	}
 	.MemberCard .member-accomplishments{
 		display: inline-block;
@@ -228,7 +233,7 @@
 		width: 32%;
 		margin-top: 3%;
 		vertical-align: top;
-		margin-left: -7%;
+		margin-left: -4%;
 	}
 	.member-accomplishments .normal-text{
 		line-height: 18px;
@@ -357,7 +362,8 @@
 		display: inline-block;
 		margin-left: 2%;
 		vertical-align: top;
-		margin-top: 5%;
+		margin-top: 0%;
+		margin-right: 2%;
 		width: 250px;
 	}
 	.MemberCard .member-image{
@@ -365,16 +371,14 @@
 		margin-left: 1%;
 		vertical-align: center;
 	}
-	.MemberCard .member-image img {
-		width: 90%;
-	}
+
 	.MemberCard .member-accomplishments{
 		display: inline-block;
 		border: 3px solid black;
 		width: 250px;
 		margin-top: 3%;
 		vertical-align: top;
-		margin-left: -7%;
+		margin-left: -4%;
 	}
 	.member-accomplishments .normal-text{
 		line-height: 18px;
@@ -450,12 +454,12 @@
 		left:1%;
 		right: 0;
 		width: 90vw;
-		min-width: 780px;
+		min-width: 760px;
 		background: #fff;
 		display: none;
 		pointer-events: auto;
 		overflow: auto;
-		height: 320px;
+		height: 470px;
 		margin-left: auto;
 		margin-right: auto;
 		z-index: 3;
@@ -479,7 +483,6 @@
 	}
 	.MemberCardContainer{
 		display: block;
-		width: 80vw;
 		margin-left: 5%;
 		margin-right: auto;
 	}
@@ -502,26 +505,27 @@
 	}
 	.MemberCard .member-experience{
 		display: inline-block;
-		margin-left: 2%;
+		margin-left: 0%;
 		vertical-align: top;
-		margin-top: 1%;
+		margin-top: 0%;
+		width: 25%;
 	}
 	.MemberCard .member-image{
 		display: inline-block;
 		margin-left: 1%;
 		vertical-align: center;
-		width: 30%;
 	}
 	.MemberCard .member-image img{
-		width: 90%;
+		width: 290px;
+		height: 280px;
 	}
 	.MemberCard .member-accomplishments{
 		display: inline-block;
 		border: 3px solid black;
-		width: 230px;
+		width: 150px;
 		margin-top: 3%;
 		vertical-align: top;
-		margin-left: -7%;
+		margin-left: -4%;
 	}
 	.member-accomplishments .normal-text{
 		line-height: 18px;
@@ -642,11 +646,11 @@
 	}
 	.MemberCard .member-experience{
 		display: inline-block;
-		margin-left: 2%;
+		margin-left: 0%;
 		vertical-align: top;
 		width: 90%;
 		position:absolute;
-		margin-top: 35%;
+		margin-top: 41%;
 	}
 	.MemberCard .member-experience br{
 		display: none;
@@ -666,14 +670,15 @@
 		left: 0%;
 	}
 	.MemberCard .member-image img{
-		width: 100%;
+		width: 230px;
+		height: 220px;
 	}
 	.MemberCard .member-accomplishments{
 		display: inline-block;
 		width: 50%;
 		vertical-align: top;
 		position: absolute;
-		left: 40%;
+		left: 45%;
 	}
 	.member-accomplishments .normal-text{
 		line-height: 18px;
@@ -717,7 +722,57 @@
 		z-index: 123;
 	}
 }
-
+@media screen and (min-width: 600px) and (max-width: 700px) {
+	.MemberCard .member-image img{
+		width: 200px ;
+		height: 190px;
+	}
+}
+@media screen and (min-width: 520px) and (max-width: 600px) {
+	.MemberCard .member-image img{
+		width: 170px ;
+		height: 160px;
+	}
+}
+@media screen and (min-width: 490px) and (max-width: 520px) {
+	.MemberCard .member-image img{
+		width: 150px ;
+		height: 140px;
+	}
+}
+@media screen and (min-width: 460px) and (max-width: 490px) {
+	.MemberCard .member-image img{
+		width: 140px ;
+		height: 130px;
+	}
+}
+@media screen and (min-width: 430px) and (max-width: 460px) {
+	.MemberCard .member-image img{
+		width: 130px ;
+		height: 120px;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 430px) {
+	.MemberCard .member-image img{
+		width: 120px ;
+		height: 110px;
+	}
+}
+@media screen and (min-width: 370px) and (max-width: 400px) {
+	.MemberCard .member-image img{
+		width: 110px ;
+		height: 100px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 370px) {
+	.MemberCard .member-image img{
+		width: 100px ;
+		height: 90px;
+	}
+	.member-accomplishments{
+		left: 43% !important;
+	}
+}
 @media screen and (min-width: 320px) and (max-width: 520px)  {
 	.MemberCardContainer .title-24{
 		font-size: 0.8rem;
@@ -765,7 +820,7 @@
 		display: none;
 		pointer-events: auto;
 		overflow: auto;
-		height: 45vh;
+		height: 400px;
 		margin-left: auto;
 		margin-right: auto;
 		z-index:3;
@@ -775,13 +830,12 @@
 		display: inline-block;
 		vertical-align: middle;
 		width: 80vw;
-		margin-top:5%;
+		margin-top:10%;
 		margin-left:5%;
 		margin-right: 5%;
 	}
 	.MemberCardContainer{
 		display: block;
-		width: 80vw;
 		margin: auto;
 		position: relative;
 		left: 5%;
@@ -790,7 +844,7 @@
 		display: inline-block;
 		vertical-align: top;
 		position: absolute;
-		top: 41%;
+		top: 45%;
 		left: 2%;
 	}
 	#link-previous a{
@@ -802,11 +856,11 @@
 	}
 	.MemberCard .member-experience{
 		display: inline-block;
-		margin-left: 2%;
+		margin-left: 0%;
 		vertical-align: top;
 		width: 90%;
 		position:absolute;
-		margin-top: 39%;
+		margin-top: 40%;
 	}
 	.MemberCard .member-experience br{
 		display: none;
@@ -821,18 +875,17 @@
 		display: inline-block;
 		margin-left: 1%;
 		vertical-align: center;
-		width: 36%;
 		position: absolute;
 		left: 0%;
 	}
 	.MemberCard .member-image img{
-		width: 100%;
+
 	}
 	.MemberCard .member-accomplishments{
 		display: inline-block;
 		width: 50%;
 		position: absolute;
-		left: 40%;
+		left: 41%;
 		margin-top:0; !important;
 		margin-bottom: 0 !important;
 		padding-top: 0;
@@ -867,7 +920,7 @@
 		display: inline-block;
 		vertical-align: top;
 		position: absolute;
-		top: 41%;
+		top: 45%;
 		right: 2%;
 	}
 	#link-next a{
@@ -889,7 +942,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 350px) {
 	.GalleryRotation {
-		height: 55vh;
+		height: 450px;
 		
 	}
 }

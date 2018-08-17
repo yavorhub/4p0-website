@@ -7,7 +7,7 @@
 			<div class="inner-div-float-right" >
 				<p>Bubikerstrasse1 </p>
 				<p>8645Rapperswil-Jona</p>
-				<p><a href="mailto:ofice@4p0.ch">ofice@4p0.ch</a></p>
+				<p><a href="mailto:office@4p0.ch">office@4p0.ch</a></p>
 			</div>
 		</div>
 </footer>

@@ -406,10 +406,7 @@
 			'hierarchical' => false,
 			'supports' => array(
 				'title',
-				'excerpt',
 				'thumbnail',
-				'revisions',
-				'custom-fields',
 				'post-formats',
 			),
 			'taxonomies' => array(

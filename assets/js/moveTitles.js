@@ -13,6 +13,9 @@ window.addEventListener("resize", function() {
 			blackDash.parent().parent().prepend(blackDash);
 			let title = $('.services .title-24')
 			title.parent().parent().prepend(title);
+			let trainingImage = $('.news-image');
+			trainingImage.prev().insertAfter(tr);
+
 		}
 		if(window.screen.width > 520){
 			console.log(window.screen.width);

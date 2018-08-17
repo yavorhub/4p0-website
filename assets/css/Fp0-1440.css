@@ -22,6 +22,10 @@
 	.news img {
 		width: 100%;
 	}
+	.news .news-text .news-image {
+		width: 90% !important;
+		float: right;
+	}
 	.services {
 		display: block;
 		min-width: 1250px;
@@ -97,26 +101,26 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.contacts div:nth-of-type(1){
+	.contacts .contacts-info{
 		margin-top: 5% !important;
 		display: inline-block;
 		margin: 10px;
 		vertical-align: top;
 	}
-	.contacts div:nth-of-type(2) {
+	.contacts .contacts-contact-form {
 		margin-top: 5% !important;
 		display: inline-block;
 		margin-left: 15%;
 		vertical-align: top;
 		width:60%;
 	}
-	
-	.contacts div img{
+	.contacts #map{
 		margin-top: 5%;
-		width: 1250px;
-		margin-left: auto;
-		margin-right: auto;
+		height: calc(60vh);
+		width: 100%;
 	}
+
+	
 	.icon-Burger-Navigation{
 		display: none;
 	}
@@ -239,6 +243,10 @@
 	.TeamImages div img{
 		width: 90%;
 	}
+	.TeamImages div h3{
+		width: 320px;
+		text-align: center;
+	}
 	/******* Black dash and Titles *********/
 	.black-dash {
 		height: 2px;
@@ -247,7 +255,7 @@
 		background-color: black;
 	}
 	.title-24{
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 		padding-top: 1%;
 		padding-bottom: 1%;
 		color: rgb(0,0,0);
@@ -286,6 +294,12 @@
 		position: relative;
 		z-index: 2;
 	}
+	.TeamImages div:nth-child(1n+2){
+		margin-top: 75px;
+	}
+	.TeamImages div:nth-child(2n+1){
+		margin-left: 13%;
+	}
 	.background-about-logo-container{
 		 position:relative;
 		 z-index: 1;
@@ -296,7 +310,7 @@
 		height: 600px;
 		position: absolute;
 		top: -300px;
-		left: -15%;
+		left: -10%;
 	}
 	.background-about-logo-container-bottom{
 		position:relative;
@@ -308,7 +322,7 @@
 		height: 600px;
 		position: absolute;
 		bottom: -200px;
-		right: -5%;
+		right: -10%;
 	}
 	/*** Training ***/
 	.background-training-logo-container{
@@ -321,7 +335,7 @@
 		height: 600px;
 		position: absolute;
 		top: 400pt;
-		left: -15%;
+		left: -10%;
 	}
 	/*** Blog ***/
 	
@@ -334,8 +348,8 @@
 		width: 600px;
 		height: 600px;
 		position: absolute;
-		top: 0px;
-		right: -15%;
+		top: -20px;
+		right: -7%;
 	}
 	/*End Of Blog*/
 	/*** Contacts ***/
@@ -350,11 +364,19 @@
 		height: 600px;
 		position: absolute;
 		bottom: -100pt;
-		right: -15%;
+		right: -10%;
 	}
-	.background-img-kontakt .google-map{
+	.background-img-kontakt #googleMap{
 		position: relative;
 		z-index: 2;
+		height: 500px;
+		width: 1200px;
+	}
+	#googleMap > div{
+		position: initial !important;
+		width: 100% !important;
+		height: 500px !important;
+		margin: 0px !important;
 	}
 	/*End of Contacts */
   /*** Services ***/
@@ -380,7 +402,7 @@
 		height: 500pt;
 		position: absolute;
 		bottom: -40pt;
-		right: -15%;
+		right: -10%;
 	}
 	.services-container{
 		background-color: #f9f9f9;

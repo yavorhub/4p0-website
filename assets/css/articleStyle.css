@@ -1,8 +1,8 @@
 /********SINGLE Blog Post *************/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1022px) {
 	
 	.background-img-post {
-		background: url("../images/Logo-BG.png");
+		background: url("../images/Logo-BG.svg");
 		background-size: 30%;
 		background-repeat: no-repeat;
 		background-position: -10% 70%;
@@ -86,6 +86,10 @@
 		margin-top: 2%;
 		margin-bottom: 2%;
 	}
+	.zum-author p:nth-of-type(1){
+		margin-bottom: 1%;
+		font-weight: 900
+	}
 	
 	.article-title {
 		font-size: 60px;
@@ -104,6 +108,10 @@
 		display: inline-block;
 		vertical-align: top;
 		float: left;
+	}
+	.article-column-container .article-subtitle{
+		margin-bottom: 5%;
+		font-family: Avenir;
 	}
 	
 	.blog-article {
@@ -124,7 +132,19 @@
 	}
 	
 	.article-main-image {
-		display: inline-block; width:60%; height: 40%; vertical-align:top; margin-left: 2%;margin-right: 2%;
+		float: left;
+		width: 60%;
+		height: 40%;
+		/* vertical-align: top; */
+		margin-left: 4%;
+		margin-right: auto;
+	}
+	.article-main-image figcaption {
+		margin-top: 1%;
+		width: 90%;
+		margin-bottom: 3%;
+		margin-left: 2%;
+		margin-right: auto;
 	}
 	
 	.article-post-column2 {
